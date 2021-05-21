@@ -30,10 +30,11 @@ body{
   max-width: 800px;
   min-height: 400px;
   margin: 30px  auto;
-  border: 1px solid steelblue;
+  border: 3px solid steelblue;
   padding: 30px;
   border-radius: 5px;
   overflow: auto;
+  box-shadow: 5px 8px 10px 12px rgba(0,0,0, 0.8);
 }
 
 .btn{
