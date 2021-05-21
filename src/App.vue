@@ -1,9 +1,10 @@
 <template>
-  <h1>Hello Vue</h1>
+  <div class="container">
+    <h1>Hello Vue</h1>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
@@ -26,11 +27,13 @@ body{
 }
 
 .container{
-  min-width: 600px;
-  min-height: 300px;
+  max-width: 800px;
+  min-height: 400px;
+  margin: 30px  auto;
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
+  overflow: auto;
 }
 
 .btn{
