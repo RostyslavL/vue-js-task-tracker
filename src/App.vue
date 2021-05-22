@@ -1,14 +1,15 @@
 <template>
   <div class="container">
-    <h1>Hello Vue</h1>
+    <Header title="Task Tracker"/>
   </div>
 </template>
 
 <script>
-
+ import Header from './components/Header'
 export default {
   name: 'App',
   components: {
+    Header
   }
 }
 </script>
@@ -30,11 +31,11 @@ body{
   max-width: 800px;
   min-height: 400px;
   margin: 30px  auto;
-  border: 3px solid steelblue;
+  border: 5px solid #000;
   padding: 30px;
   border-radius: 5px;
   overflow: auto;
-  box-shadow: 5px 8px 10px 12px rgba(0,0,0, 0.8);
+  box-shadow: 5px 8px 8px 5px rgba(0,0,0, 0.8);
 }
 
 .btn{
