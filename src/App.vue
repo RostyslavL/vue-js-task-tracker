@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header title="Task Tracker"/>
-    <Tasks :tasks="tasks"/>
+    <Tasks @delete-task="deleteTask" :tasks="tasks"/>
   </div>
 </template>
 
@@ -20,6 +20,13 @@ export default {
     return{
       tasks:[]
     }
+  },
+  methods:{
+    deleteTask(id){
+      if(confirm ('Are you sure ?')){
+      this.tasks = this.tasks.filter((task) =>  task.id !== id )
+      }
+    },
   },
   created(){
     this.tasks = [
@@ -83,6 +90,11 @@ body{
   text-decoration: none;
   font-size: 20px;
   font-family: inherit;
+  box-shadow: 2px 2px 4px 4px rgba(0,0,0, 0.4);
+}
+.btn:hover{
+ transform: scale(1.025);
+ transition: 1s transform ease-in-out;
 }
 
 </style>

@@ -2,7 +2,10 @@
     <button
         @click="onClick()" 
         :style="{background: color}" 
-        class="btn"> {{ text }}
+        class="btn"> 
+        <i class="fas fa-plus">
+            &nbsp;{{ text }}
+        </i>
     </button>
 </template>
 
