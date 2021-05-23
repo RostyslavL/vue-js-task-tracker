@@ -3,7 +3,7 @@
         @click="onClick()" 
         :style="{background: color}" 
         class="btn"> 
-        <i class="fas fa-plus">
+        <i :class="'fas fa-plus'" > 
             &nbsp;{{ text }}
         </i>
     </button>
@@ -16,12 +16,13 @@ export default ({
     name:'Button',
     props: {
         text: String,
-        color: String
+        color: String,
     },
     methods:{
         onClick(){
-            this.$emit('toggle-add-task')
-        }
+            this.$emit('btn-click')
+        },
+
     }
 })
 </script>
