@@ -20,7 +20,7 @@ export default ({
     },
     methods:{
         onClick(){
-            console.log('Button - onClick - invoced')
+            this.$emit('toggle-add-task')
         }
     }
 })
