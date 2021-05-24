@@ -3,7 +3,7 @@
         @click="onClick()" 
         :style="{background: color}" 
         class="btn"> 
-        <i :class="'fas fa-plus'" > 
+        <i :class="'fas fa-plus'" >             
             &nbsp;{{ text }}
         </i>
     </button>
